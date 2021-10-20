@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "name": "Experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ComapnyName": {
+      "type": "string"
+    },
+    "Designation": {
+      "type": "string"
+    },
+    "Duration": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -2,25 +2,42 @@
   "kind": "singleType",
   "collectionName": "abouts",
   "info": {
-    "name": "About"
+    "name": "About",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
-    "content": {
-      "type": "dynamiczone",
-      "components": [
-        "sections.images-slider",
-        "sections.large-media",
-        "sections.rich-text"
-      ]
+    "CompanyName": {
+      "type": "string"
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "meta.seo"
+    "Designation": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "About": {
+      "type": "richtext"
+    },
+    "CV": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
